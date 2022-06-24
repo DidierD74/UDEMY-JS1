@@ -79,6 +79,7 @@ do {
 //--------------------------------------------------------------------
 //------------------2EME / MA METHODE (lE 23/06/2022)-----------------
 
+// // Boucle principale :
 // function debutcalcul() {
 //   do {
 //     var choix = prompt(
@@ -86,6 +87,7 @@ do {
 //     );
 //   } while (choix != 1 && choix != 2 && choix != 3 && choix != 4);
 
+//   // 2eme Boucle, celle-ci permet à l'utilisateur de saisir les 2 nombres pour l'"opération :
 //   do {
 //     var premierNombre = Number(prompt("Saisissez votre 1er nombre : "));
 //     var deuxiemeNombre = Number(prompt("Saisissez votre 2eme nombre :"));
@@ -114,6 +116,7 @@ do {
 //     return result;
 //   }
 
+//   // Ici il s'agit du switch permettant de choix du type d'opération, il a était intégré dans un tryCatch afin de capter erreur éventuelle :
 //   try {
 //     switch (choix) {
 //       case "1":
@@ -138,6 +141,7 @@ do {
 //   }
 // }
 
+// // boucle qui recommence la boucle principale: debutcalcul(), si le confirm est validé par l'utilisateur :
 // do {
 //   debutcalcul();
 // } while (confirm("Voulez-vous recommencer un nouveau calcul ? "));
